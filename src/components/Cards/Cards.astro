@@ -1,0 +1,25 @@
+---
+const { posts, withCategory } = Astro.props;
+---
+
+<article>
+  <ul class="space-y-4 list-none pl-0">
+    {
+      posts.map((post: any) => (
+        <li class="space-y-2">
+          <a
+            href={`/notes/classes/${post.category}`}
+          >
+            {post.category}
+          </a>
+          <a href={`/notes/${post.slug}`}>
+            <h2 class="mt-0 mb-0">
+              {post.title}
+            </h2>
+          </a>
+          <p class="my-0 text-xs">{post.date}</p>
+        </li>
+      ))
+    }
+  </ul>
+</article>

@@ -1,5 +1,18 @@
 ---
+import { generateCategoryPosts } from "../../utils/helper";
+import Cards from "../components/Cards/Cards.astro";
 import Layout from "../layouts/Layout.astro";
+
+const allPosts = await Astro.glob(
+  "./notes/*.{mdx,md}"
+);
+
+const posts = generateCategoryPosts(allPosts);
 ---
 
-<Layout title="Class Notes" />
+<Layout title="Class Notes">
+  <section class="prose container mx-auto my-12">
+    <h1>My Notes</h1>
+    <Cards posts={posts} withCategory={false} />
+  </section>
+</Layout>

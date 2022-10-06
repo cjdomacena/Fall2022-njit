@@ -1,0 +1,47 @@
+---
+import {
+  generateCategoryPosts,
+  generateUniqueCategories,
+} from "../../../../utils/helper";
+import Cards from "../../../components/Cards/Cards.astro";
+import Layout from "../../../layouts/Layout.astro";
+
+export async function getStaticPaths() {
+  const allPosts = await Astro.glob(
+    "../*.{mdx,md}"
+  );
+  const uniqueCategories =
+    generateUniqueCategories(allPosts);
+
+  const categoryPosts =
+    generateCategoryPosts(allPosts);
+
+  return categoryPosts.map((category) => {
+    const posts = allPosts.filter((post) =>
+      post.frontmatter.category.includes(
+        category.category
+      )
+    );
+
+    return {
+      params: { slug: category.category },
+      props: {
+        category: category.category,
+        posts: generateCategoryPosts(posts),
+      },
+    };
+  });
+}
+
+const { category, posts } = Astro.props;
+---
+
+<Layout title={String(category).toUpperCase()}>
+  <section class="prose container mx-auto my-12">
+    <div>
+      <h1>#{category}</h1>
+    </div>
+
+    <Cards posts={posts} />
+  </section>
+</Layout>
