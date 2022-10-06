@@ -41,7 +41,6 @@ const { category, posts } = Astro.props;
     <div>
       <h1>#{category}</h1>
     </div>
-
-    <Cards posts={posts} />
+    {posts && <Cards posts={posts} />}
   </section>
 </Layout>
