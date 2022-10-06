@@ -1,6 +1,6 @@
 import mdx from "@astrojs/mdx";
-import { defineConfig } from "astro/config";
 import tailwind from "@astrojs/tailwind";
+import { defineConfig } from "astro/config";
 
 import netlify from "@astrojs/netlify/functions";
 
@@ -8,5 +8,10 @@ import netlify from "@astrojs/netlify/functions";
 export default defineConfig({
   integrations: [mdx(), tailwind()],
   output: "server",
-  adapter: netlify()
+  adapter: netlify(),
+  vite: {
+    ssr: {
+      external: ["svgo"],
+    },
+  },
 });

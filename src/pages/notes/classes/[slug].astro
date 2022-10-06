@@ -22,18 +22,21 @@ export async function getStaticPaths() {
         category.category
       )
     );
+    const formattedPosts =
+      generateCategoryPosts(posts);
 
     return {
       params: { slug: category.category },
       props: {
         category: category.category,
-        posts: generateCategoryPosts(posts),
+        posts: formattedPosts,
       },
     };
   });
 }
 
 const { category, posts } = Astro.props;
+console.log(posts);
 ---
 
 <Layout title={String(category).toUpperCase()}>
@@ -41,6 +44,6 @@ const { category, posts } = Astro.props;
     <div>
       <h1>#{category}</h1>
     </div>
-    {posts && <Cards posts={posts} />}
+    <Cards posts={posts} />
   </section>
 </Layout>
