@@ -9,9 +9,4 @@ export default defineConfig({
   integrations: [mdx(), tailwind()],
   output: "server",
   adapter: netlify(),
-  vite: {
-    ssr: {
-      external: ["svgo"],
-    },
-  },
 });
