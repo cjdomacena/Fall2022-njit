@@ -28,7 +28,9 @@ export const generateCategoryPosts = (
           month: "short",
           year: "numeric",
         }).format(
-          new Date(post.frontmatter.date)
+          post.frontmatter.date
+            ? new Date(post.frontmatter.date)
+            : new Date()
         ),
         category: post.frontmatter.category,
       };
