@@ -2,7 +2,7 @@
 layout: "../../layouts/NoteLayout.astro"
 title: IT340 Midterm Review
 slug: it340-midterm-review
-date: 24-10-2022
+date: 10-24-2022
 category: it340
 author: Christian Domacena
 ---
@@ -107,62 +107,63 @@ Z shell takes shell evolution further than the Korn Shell, incorporating feature
 
 ### Questions:
 
-** Internal vs External Commands **
+**Internal vs External Commands**
 
      - Internal are commands built directly into the shell.
      - External are commands that exists as files elsewhere. (E.g. npm commands)
 
-** How can you determine if a command is internal or external? **
+**How can you determine if a command is internal or external?**
 
 Using the `type` command, it will return if a command is external or external.
 
-\*\* '$' vs '#'
+'$' vs '#'
 
 '#' - root user
+
 '$' - regular user
 
-Commands
+**Commands**
 
 `$set` - Can be used to view or change shell variables like `$PATH` or `$shell`
 
-`$logout` - closes the current shell **IF** it was launched from the login command.
+`$logout` - closes the current shell**IF**it was launched from the login command.
 
-** Which takes precendence - Internal or External Commands? **
+**Which takes precendence - Internal or External Commands?**
 
 Internal commands take precedence unless the full path of the external command was typed.
 
-** How do you exit vi **
+**How do you exit vi**
 
 In Visual mode type `:q`
 
-** How to declare a varable **
+**How to declare a varable**
 
 `$export VARIABLE=somevalue`
 
-** Three basic Pipe commands in Linux Systems **
+**Three basic Pipe commands in Linux Systems**
 
-a. `stdin:` (0) -> Standard input
-b. `stdout:` (1) -> Standard output
-c. `stderr:` (2) -> Standard error
+    `stdin:` (0) -> Standard input
+    `stdout:` (1) -> Standard output
+    `stderr:` (2) -> Standard error
 
 - Linux treats these pipes as files and thus all file operations (cat, cd, etc..) may be applied to theml.
 
-** What does this do: `echo $VARIABLE > file.txt` **
+**What does this do: `echo $VARIABLE > file.txt`**
 
 Copies the information contained within the `$VARIABLE` to file.txt
 If _file.txt_ does not exists, it will create one or overwrites if does.
 
-** tee command **
-Outputs to a file **AND** shows the results to the screen.
+**tee command**
+Outputs to a file**AND**shows the results to the screen.
 
-** What does this command do: `$someProgram | tee output.txt` **
+**What does this command do: `$someProgram | tee output.txt`**
 Outputs the information to `$someProgram` to _output.txt_ as well as print it to the screen.
 
-** What is the symbol for piping? **
+**What is the symbol for piping?**
 
 `|`
 
-** What does piping do? **
+**What does piping do?**
 
 Passes the output of one tool as the input of another tool.
 
@@ -199,21 +200,21 @@ eg. `cat file1.txt file2.txt > file3.txt` -> Concats file1 and file2 and outputs
 `wc` -> Counts line, words, bytes, or characters.
 Ouput of a `wc` command. - [lines] [no. words] [characters] [filename]
 
-** What does this command do? `wc -lw file.txt`? **
+**What does this command do? `wc -lw file.txt`?**
 
 Displays the no. of lines and words in a file.
 
 `l` - lines
 `w` - words
 
-** What is regular expression **
+**What is regular expression**
 Perform pattern matching in text data. Knows as REGEX.
 
-** what will this find: d[aeiou]g? **
+**what will this find: d[aeiou]g?**
 
 Will find any words that matches with words that starts with _d_, any letter that matches _a,e,i,o,u_, and ends with _g_
 
-** How do you find match a single character using regular expressions **
+**How do you find match a single character using regular expressions**
 
 | Symbol | Description                                              |
 | ------ | -------------------------------------------------------- |
@@ -229,33 +230,35 @@ example command using `grep`:
 
 `cat myfile.txt | grep a`
 
-** How to escate a regex character in Linux? **
+**How to escate a regex character in Linux?**
 
-\*\*
+---
 
 `grep` -> evaluates a file and counts matching lines patterns, and etc. It stands for general regular expression parser.
 
 `sed` -> Stream editor for filtering and transforming text.
 
-** What does this command do: `$sed 's/unix/linux/` file1.txt > file2.txt`? **
+**What does this command do: `$sed 's/unix/linux/` file1.txt > file2.txt`?**
 
-Will change the first occurence of the word _unix_ with _linux_ in **EVERY LINE** and not every occurence in the same line.
+Will change the first occurence of the word _unix_ with _linux_ in**EVERY LINE**and not every occurence in the same line.
 
 "s" specifies the substitution operation
 "/" are delimeters. The first word is the search term and the second is the replacement string.
 
 - You can use different flags such as '/1, /2, /g'. The number determines when to replace based on occurrence.
 
-** What packages in Linux? **
+---
+
+**What packages in Linux?**
 
 Libraries of software contained by the OS.
 
-** What are the 2 package management systems **
+**What are the 2 package management systems**
 
 1. RPM (Redhat Package Management)
 2. Debain (Used by Ubuntu and others)
 
-** What utilities may be used to manage packages? **
+**What utilities may be used to manage packages?**
 
 Some are:
 
@@ -263,37 +266,49 @@ Some are:
 - synaptic,
 - yum,
 
-** What is a package management system responsible for? **
+**What is a package management system responsible for?**
 
 Controlling the versions of files in an installed packages, enforcing dependencies. (like npm)
 
-** What are dependencies? **
+**What are dependencies?**
 
 Packages required by other packages to run.
 
-** True or False: Package management systems seamlessly identify dependencies and automatically install software needed. **
+**True or False: Package management systems seamlessly identify dependencies and automatically install software needed.**
 
 True - Think of it like package.json or `npm install`. It will recursively install required packages.
 
-** What is checksum? **
+**What is checksum?**
 
 A simple file integrity check in which the values of individual bits or bytes are summed up and compared to a stored value for a reference version of the file.
 
-** What will tab do? **
+**What will tab do?**
 
 Tab will autofill the rest of a phrase if enough characters have been entered.
 
-** What makes up the full package name in RPM? **
+**What makes up the full package name in RPM?**
 
 {packagename}{version}{build}{architecture}
 
 e.g. package-8.0.0-3.x86.rpm
 
-** Common options for RPM **
+**Common options for RPM**
+| Option | Description |
+| --- | --- |
+| -i | install |
+| -U | install a new package or upgrades an existing one |
+| -F | upgrades if its already install |
+| -V | verifies a package |
+| -e | uinstalls the package |
+| -b | builds a binary package |
+| --rebuilddb | rebuilds the package db |
+| --all | verifies all installed packages |
+| --requires | displays dependencies |
+| --list | displays filenams contained in a package |
+| -h | displays progress of an installation |
+| --force | forces the installation and overwrites existing files. |
 
-`-i install -U install a new package or upgrades an existing one -F upgrades if its already install -V verifies a package -e uinstalls the package -b builds a binary package --rebuilddb rebuilds the package db --all verifies all installed packages --requires displays dependencies --list displays filenams contained in a package -h displays progress of an installation --force forces the installation and overwrites existing files.`
-
-** What are the differences between yum and rpm **
+**What are the differences between yum and rpm?**
 
 #### YUM yellow dog updater, modified
 
@@ -315,45 +330,47 @@ User Experience
 RPM can get a little complicated.
 Yum is much more user-friendly
 
-** How do you find out which library a program uses? **
+**How do you find out which library a program uses?**
 
 Use `ldd /bin/ls` will display the library a program uses.
 
-** What does the Kernel do? **
+**What does the Kernel do?**
 
 Located in the heart of the CPU; it connects the application to the hardware. The kernel will make the low level hardware operations on behalf of the application.
 Minimizes the application making direct calls to hardware, memory, and crashing the computer as a result of errors occuring.
 
 ### Commands
 
-`ps` -. Displays all active processes on a machine
-`top` - Shows the top executing processes.
-`jobs` - Shows info about the processes executing in the current session.
-`nice`- Change the priority level or a process. (Default 10) E.g. `nice --adjustment=9 processName`
-`renice` - Current process can have their priority changed using renice.
-`kill` - Kills a specified command by the PID (Process ID).
-`killall` - Kills all processes.
-`passwd` - Changes password
-`dd` - Disk duplicate (File archiving)
-`cpio` - Copy i/o - Generally used to do backups to tape devices.
+| Command | Description                                                                                 |
+| ------- | ------------------------------------------------------------------------------------------- |
+| ps      | Displays all active processes on a machine                                                  |
+| top     | Shows the top executing processes.                                                          |
+| jobs    | Shows info about the processes executing in the current session.                            |
+| nice    | Change the priority level or a process. (Default 10) E.g. `nice --adjustment=9 processName` |
+| renice  | Current process can have their priority changed using renice.                               |
+| kill    | Kills a specified command by the PID (Process ID).                                          |
+| killall | Kills all processes.                                                                        |
+| passwd  | Changes password                                                                            |
+| dd      | Disk duplicate (File archiving)                                                             |
+| cpio    | Copy i/o - Generally used to do backups to tape devices.                                    |
 
-** What do disk quotas do? **
+**What do disk quotas do?**
 
 Quotas allow admins to place limits on the amount of storage space given to users.
 
-** Which utility can help you convert packages? **
+**Which utility can help you convert packages?**
 `alien`
 
-** What is the node name in reference to the kernel? **
+**What is the node name in reference to the kernel?**
 The systems node name is its network hostsname
 
 `$uname -n`
 
-** How do you see all kernel information? **
+**How do you see all kernel information?**
 
 `$uname -a`
 
-** What are the default file permissions? **
+**What are the default file permissions?**
 666
 
 -r--r--r--
@@ -385,7 +402,7 @@ filetype 6 6 4
 
 `find`
 
-** What is SUID? **
+**What is SUID?**
 The Linux access permission flag bit that allows users to run an executable file with the perission of the executable owner.
 
 `umask` - Sets the user mask.
@@ -396,7 +413,7 @@ The Linux access permission flag bit that allows users to run an executable file
 
 `whereis` - Searches for files in the restricted sections. Usually to find binaries.
 
-** What is an IRQ? **
+**What is an IRQ?**
 An interrupt request is a signal sent to the CPU instructing it to suspend its current activity and to handle some external event, such as keyboard input.
 
 ### Some IRQs and their common uses
@@ -418,7 +435,7 @@ An interrupt request is a signal sent to the CPU instructing it to suspend its c
 `df` - Displays file system disk space usage. `df -h` will show mounted devices.
 `which` - Shows the full path of shell commands.
 
-** How would you change permissions of a directory, thisDir, and all of its subdirectories and files to provide full readwrite and execute capabilities to only the group and user? **
+**How would you change permissions of a directory, thisDir, and all of its subdirectories and files to provide full readwrite and execute capabilities to only the group and user?**
 
 `chmod +x 770`
 
