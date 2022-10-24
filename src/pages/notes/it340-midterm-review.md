@@ -9,6 +9,8 @@ author: Christian Domacena
 
 # IT340 Midterm Review
 
+Based on [IT340 Midterm Flashcards](https://quizlet.com/737578900/it340-midterm-review-flash-cards/)
+
 ## Chapter 1
 
 ### Commands
