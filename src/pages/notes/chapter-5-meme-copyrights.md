@@ -9,33 +9,28 @@ slug: chapter-5-meme-copyrights
 
 # Chapter 5: Commercially Motivated Strategic Messaging and Internet Memes (Wiggins)
 
-### What makes a meme successful? 
+### What makes a meme successful?
 
 - Make a meme that can be understood w/o relying on meme syntax.
 
-- Don't try too hard; think about audience and reception. 
-
+- Don't try too hard; think about audience and reception.
 
 ### Modern Problems Require Modern Solutions: Internet Memes and Copyright
 
-Mentions 2018 lawsuit against Epic Games for *Carlston Dance*
+Mentions 2018 lawsuit against Epic Games for _Carlston Dance_
 
-
-Series of lawsuits against almost anyone that uses *Pepe the Frog* Memes
+Series of lawsuits against almost anyone that uses _Pepe the Frog_ Memes
 
 If an image is heavily remixed, the original image is still yours.
 
-
 Derivative Work and Fair Use laws
 
+Internet memes are in a weird territory--legally.
 
-
-Internet memes are in a weird territory--legally. 
-
-Before the period of copyright/patents, creators/inventors hide their idea. 
-
+Before the period of copyright/patents, creators/inventors hide their idea.
 
 ---
+
 There should be no penalty using copyrighted works when making memes.
 
 Technically, most memes are abusively uses copyrighted material.
