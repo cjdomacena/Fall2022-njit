@@ -1,10 +1,10 @@
 ---
 layout: "../../layouts/NoteLayout.astro"
-title: Chapter 5: Meme copyrights 
+title: "Chapter 5-Meme copyrights"
 date: 10-19-2022
 category: hss
 author: Christian Domacena
-slug: chapter-5-meme-copyrights 
+slug: chapter-5-meme-copyrights
 ---
 
 # Chapter 5: Commercially Motivated Strategic Messaging and Internet Memes (Wiggins)
