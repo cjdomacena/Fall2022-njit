@@ -3,7 +3,7 @@ layout: "../../layouts/NoteLayout.astro"
 title: Business models and concepts
 slug: business-models-and-concepts
 date: 9-22-2022
-category: it340
+category: it310
 author: Christian Domacena
 ---
 

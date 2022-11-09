@@ -3,7 +3,7 @@ layout: "../../layouts/NoteLayout.astro"
 title: Chapter 5 Online Security and Payment Systems
 slug: chapter-5-online-security-and-payment-systems
 date: 10-13-2022
-category: it340
+category: it310
 author: Christian Domacena
 ---
 

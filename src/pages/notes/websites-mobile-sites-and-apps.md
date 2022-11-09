@@ -3,7 +3,7 @@ layout: "../../layouts/NoteLayout.astro"
 title: Websites, Mobile Sites, and Apps
 slug: websites-mobile-sites-and-apps
 date: 10-6-2022
-category: it340
+category: it310
 author: Christian Domacena
 ---
 

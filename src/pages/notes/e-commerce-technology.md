@@ -3,7 +3,7 @@ layout: "../../layouts/NoteLayout.astro"
 title: E-commerce technology
 slug: e-commerce-technology
 date: 9-15-2022
-category: it340
+category: it310
 author: Christian Domacena
 ---
 
