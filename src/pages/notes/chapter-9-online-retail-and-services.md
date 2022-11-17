@@ -1,7 +1,7 @@
 ---
 layout: "../../layouts/NoteLayout.astro"
 title: "Online Retail and Services"
-slug: chapter-9-online-retial-and-services
+slug: chapter-9-online-retail-and-services
 date: 11-17-2022
 category: it310
 ---
