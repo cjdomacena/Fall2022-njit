@@ -13,7 +13,9 @@ author: Christian Domacena
 
 1. Rhetorical Strategy Paper
 
-2. Presentation of Scholarship ### Presentation of Scholarship (Max. 10min)
+2. Presentation of Scholarship 
+
+### Presentation of Scholarship (Max. 10min)
 
 - Presenation about any paper/reasearch that you encounter during research on any paper.
 
