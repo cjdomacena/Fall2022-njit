@@ -1,5 +1,5 @@
 ---
-layout: "../../Layouts/NoteLayout.astro"
+layout: "../../layouts/NoteLayout.astro"
 title: "Online Retail and Services"
 slug: chapter-9-online-retial-and-services
 date: 11-17-2022
@@ -28,22 +28,21 @@ category: it310
 
 - U.S. retail market
 
-	- Personal consumption of goods and services accounts for $13.9 trillion (about 69%) of total GPD.
+  - Personal consumption of goods and services accounts for $13.9 trillion (about 69%) of total GPD.
 
 ### The Retail Industry
 
 - 7 segments (clothing, durable goods, and etc.)
 
-	- For each, uses of Internet may differ 
-	
-		- Information vs direct purchasing
+  - For each, uses of Internet may differ
+
+    - Information vs direct purchasing
 
 - Mail order/telephone order (MOTO) sector
 
-	- Most similar to online retail sector
+  - Most similar to online retail sector
 
-	- Sophisticated order entry, delivery, inventory control systems
-
+  - Sophisticated order entry, delivery, inventory control systems
 
 ### Composition of the U.S. Retail Industry
 
@@ -79,29 +78,26 @@ category: it310
 
 - Growing at faster rate than offline segments
 
-- Computers and consumer electronics generate highest percentage of revenue, followed by the apparel and  accessories category
+- Computers and consumer electronics generate highest percentage of revenue, followed by the apparel and accessories category
 
 - Around 80% of Internet users will buy online in 2018
 
 - Primary beneficiaries:
 
-	- Established offline retailers with online presence (e.g. Staples)
+  - Established offline retailers with online presence (e.g. Staples)
 
-	- Pure-play online retailers (e.g., Amazon)
-
+  - Pure-play online retailers (e.g., Amazon)
 
 - Omni-channel integration
 
-	- Integrating web operations with physical store operations
+  - Integrating web operations with physical store operations
 
-		- Leverage value of physical store
+    - Leverage value of physical store
 
-		- Types of integration, e.g. online order, in-store pickup
+    - Types of integration, e.g. online order, in-store pickup
 
 - Social e-commerce growth
 
 - Location-based marketing of local goods and services
 
 - Rapidly growing mobile platform
-
-
