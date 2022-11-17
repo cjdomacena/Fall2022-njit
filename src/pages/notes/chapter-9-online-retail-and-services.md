@@ -101,3 +101,98 @@ category: it310
 - Location-based marketing of local goods and services
 
 - Rapidly growing mobile platform
+
+### Analyzing the Viability of Online Firms
+
+- Economic Viability:
+
+	- Ability of firms to survive as profitable business firms during specified period (i.e., 1-3years)
+
+- Two business analysis approaches:
+
+	- Strategic analysis
+
+		- Focuses on both industry and firm itself
+
+	- Financial analysis
+
+		- How firm is performing
+
+#### Strategic Analysis Factors
+
+
+- Key industry strategic factors
+
+	- Barriers to entry 
+
+	- Power of suppliers
+
+	- Existence of substitute products
+
+	- Industry value chain
+
+	- Nature of intra-industry competition
+
+
+- Firm Specific factors
+
+	- Firm value chain
+
+	- Core competencies
+
+	- Synergies
+
+	- Technology
+
+	- Social and legal challenges
+
+#### Financial Analysis Factors
+
+- Statement of Operations
+
+	- Revenues
+
+	- Cost of Sales
+
+	- Gross Margin
+
+	- Operating Expenses
+
+	- Operating Margin
+
+	- Net Margin
+
+		- Pro forma earnings- Earnings before interest, taxds, depreciation, and amoritization (EBITDA)
+
+- Balance Sheet
+
+	- Asset
+
+	- Current Assets
+
+	- Liabilities
+
+	- Current Liabilities
+
+	- Long-term debt
+
+	- Working capital
+
+
+### E-commerce in Action: Amazon
+
+**Vision** 
+
+- Lowest prices, best selection, most customer-centric
+
+**Business Model**
+
+- Retail, third-party merchants, and Amazon Web Services
+
+**Financial Analysis**
+
+- Continued explosive revenue growth, profitable
+
+**Strategic analysis/business strategy**
+
+- Maximize sales volume, lower costs and prices, acquisitions, mobile shopping, new products and services
